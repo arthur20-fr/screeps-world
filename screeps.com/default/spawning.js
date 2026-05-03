@@ -25,7 +25,6 @@ var spawning = {
             Game.spawns["Spawn1"].spawnCreep([WORK,CARRY,MOVE,MOVE], 'Upgrader'+Game.time, {memory: { role: 'upgrader'}});
         }
     }
-    
 }
 
 

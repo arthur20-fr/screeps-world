@@ -8,6 +8,7 @@ var roleHarvester = {
         }
         else
         {
+            //creep.drop(RESOURCE_ENERGY, creep.store.getUsedCapacity())
             if (creep.transfer(Game.spawns["Spawn1"], RESOURCE_ENERGY) == ERR_NOT_IN_RANGE ){
                 if (creep.transfer(Game.spawns["Spawn1"], RESOURCE_ENERGY) == ERR_FULL){
                     creep.drop(RESOURCE_ENERGY);
@@ -20,6 +21,6 @@ var roleHarvester = {
             }
         }
     }
-};
+}
 
 module.exports = roleHarvester;
